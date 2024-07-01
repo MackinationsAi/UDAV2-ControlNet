@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "depth_anything_v2"
+readme = "README.md"
+version = "2024.07.01.0"
+dependencies = [
+    "torch",
+    "torchvision",
+    "opencv-python",
+]
+
+[project.urls]
+Documentation = "https://github.com/MackinationsAi/UDAV2-ControlNet"
+Issues = "https://github.com/MackinationsAi/UDAV2-ControlNet/issues"
+Source = "https://github.com/MackinationsAi/UDAV2-ControlNet"
+
+[tool.hatch.build.targets.wheel]
+packages = [
+    "depth_anything_v2",
+]
